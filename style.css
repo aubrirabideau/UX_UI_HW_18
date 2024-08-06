@@ -30,10 +30,11 @@
     justify-content:space-evenly;
 }
 
-.flex-container{
-    display: flex;
-    flex-direction: column;
-    padding: 50px 300px;
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    /* padding: 50px 300px; */
     font-family: "Prata", serif;
     font-weight: 400;
     font-style: normal;
@@ -93,6 +94,76 @@
 }
 .heroImg{
     padding: 80px 300px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+}
+.skills{
+    font-family: "prata", serif;
+    font-size: 20px;
+    color: white;
+    grid-column: 4/4;
+
+}
+.sheis{
+    font-family: "prata", serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    grid-column: 4/4;
+    padding: 0px 20px;
+}
+.UXUI{
+    /* padding: 0px 0px 0px; */
+    Font-size: 40px;
+    Font-family: "Eastwood", serif;
+}
+.linkedin{
+    grid-column: 1/4;
+    padding: 0px 0px 30px 0px;
+}
+.ER-Quote{
+    font-size: 30px;
+    padding: 0px 0px 30px 0px;
+}
+
+.ER{
+    font-size: 35px;
+    color: white;
+}
+.MyWorkBackground{
+    background-image: url("images/mywork_background.jpg");
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: "Eastwood", serif;
+    display:flex;
+    flex-direction: row; 
+    justify-content:space-evenly;
+}
+.ArtPulse{
+    font-size: 18px;
+    text-align: center;
+    padding: 275px 0px;
+}
+.CWFRedesign{
+    font-size: 22px;
+    text-align: center;
+    padding: 100px;
+}
+
+.EscapeRoute{
+    font-size: 30px;
+    text-align: center;
+    padding: 250px 0px;
+}
+.About{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    width: 900px;
+    padding: 50px 400px;;
 }
 
 
