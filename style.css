@@ -1,6 +1,4 @@
-.inline-block{
-    height: 20px;
-}
+
 @font-face {
     font-family: Eastwood;
     src: url("Eastwood_ttf.ttf");
@@ -18,8 +16,8 @@
     font-size: 20px;
     text-align: center;
 }
-.logo{
-    width: 15px;
+.logo img {
+    width: 80px;
     padding: 1%;
     background: black;
 }
@@ -31,10 +29,6 @@
 }
 
 .grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
-    /* padding: 50px 300px; */
     font-family: "Prata", serif;
     font-weight: 400;
     font-style: normal;
@@ -49,7 +43,6 @@
 .main{
     display: flex;
     flex-direction:column;
-    border-style: solid black;
 }
 
 .row{
@@ -67,6 +60,7 @@
     border-radius: 20px;
     font-family: "Eastwood", serif; 
     font-size: 18px;
+    text-shadow: 1px 1px black;
 }
 .footer-row{
     justify-content: left;
@@ -91,55 +85,52 @@
     color: white;
     Font-size: 100px;
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 250px;
+    text-shadow: 3px 3px black;
 }
-.heroImg{
-    padding: 80px 300px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 30px;
-}
-.skills{
-    font-family: "prata", serif;
-    font-size: 20px;
-    color: white;
-    grid-column: 4/4;
 
+.heroImg img { 
+    width: 500px; 
+    padding: 80px 300px;
 }
-.sheis{
-    font-family: "prata", serif;
-    font-size: 20px;
+
+.main{
+    padding: 0px 300px;
+    Font-size: 40px;
+    Font-family: "Prata", serif;
     color: white;
-    text-align: center;
-    grid-column: 4/4;
-    padding: 0px 20px;
 }
 .UXUI{
-    /* padding: 0px 0px 0px; */
-    Font-size: 40px;
-    Font-family: "Eastwood", serif;
-}
-.linkedin{
-    grid-column: 1/4;
-    padding: 0px 0px 30px 0px;
+    text-shadow: 2px 2px black;
 }
 .ER-Quote{
-    font-size: 30px;
-    padding: 0px 0px 30px 0px;
+    padding: 25px 0px;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+}
+.ER{
+    padding: 0px 0px;
+    font-size: 25px;
+    text-shadow: 2px 2px black;
+}
+.flex-container2{
+    Font-family: "eastwood", serif;
+    color: white;
+    align-items: center;
+    font-size: 100px;
+    height: 150px;
+    padding: 100px 600px;
+    text-shadow: 2px 2px black;
 }
 
-.ER{
-    font-size: 35px;
-    color: white;
-}
 .MyWorkBackground{
-    background-image: url("images/mywork_background.jpg");
+    background-image: url("images/wooden.png");
     height: 900px;
     background-size: cover;
     background-position: center;
     color: white;
-    font-family: "Eastwood", serif;
+    font-family: "Prata", sans-serif;
     display:flex;
     flex-direction: row; 
     justify-content:space-evenly;
@@ -147,32 +138,142 @@
 .ArtPulse{
     font-size: 18px;
     text-align: center;
-    padding: 275px 0px;
+    padding: 275px 50px;
+    text-shadow: 2px 2px black;
+    height: auto;
 }
 .CWFRedesign{
     font-size: 22px;
     text-align: center;
     padding: 100px;
+    text-shadow: 2px 2px black;
 }
 
 .EscapeRoute{
     font-size: 30px;
     text-align: center;
-    padding: 250px 0px;
+    padding: 250px 100px 100px 100px;
+    text-shadow: 2px 2px black;
 }
 .About{
     text-align: center;
     color: white;
     font-size: 30px;
     width: 900px;
-    padding: 0px 400px;;
+    padding: 50px 420px;
+    text-shadow: 2px 2px black;
+}
+.Sheis{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    width: 900px;
+    padding: 20px 0px 200px 420px;
+    text-shadow: 2px 2px black;
+}
+ 
+.Flex-Container{
+    background-image: url("images/cowboycrow.png");
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    Font-size: 20px;
+    Font-family: "Prata", serif;
+    color: white;
+    justify-content: center;
+    height: 600px;
+}
+.Column1{
+    Width: 50%;
+    padding: 70px 0px 20px 300px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+.Column2{
+    Width: 50%;
+    padding: 70px 300px 20px 0px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+.Accomplishments{
+    color:white;
+    font-size: 40px;
+    font-family: "Eastwood", serif;
+    text-shadow: 2px 2px black;
+}
+.Skills{
+    color:white;
+    font-size: 40px;
+    font-family: "Eastwood", serif;
+    text-shadow: 2px 2px black;
 }
 
-
-
-  
-
-
-
-
-
+@media screen and (max-width: 600px) { 
+   .navigation{
+        height: 75px;
+   } 
+    .white-text{
+        display: none;
+    }
+    .heroImg img { 
+        width: 70%; 
+        height: auto; 
+        padding: 30px 70px;
+    } 
+    .Name{
+        font-size: 60px;
+        position: absolute;
+        bottom: 100px;
+        left: 70px;
+    }
+    .UXUI{
+        font-size: 30px;
+    }
+    .main{
+        padding: 20px;
+        text-align: center;
+    }
+    .About{
+        padding: 40px;
+        font-size: 20px;
+        width: 400px;
+    }
+    .Sheis{
+        padding: 40px;
+        font-size: 20px;
+        width: 400px;
+    }
+     .Flex-Container{
+        display: flex;
+        flex-direction: column;
+        padding: 80px 40px 50px 40px;
+        height: 900px;
+     }
+     .Column1{
+        padding: 0px 0px 100px 100px;
+     }
+     .Column2{
+        padding: 0px 40px 10px 10px;
+        width: 400px;
+     }
+     .flex-container2{
+        padding: 80px 60px;
+        font-size: 80px;
+        height: 100px;
+     }
+     .MyWorkBackground{
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+     }
+     .ArtPulse{
+        padding: 0px 0px;
+     }
+     .CWFRedesign{
+        padding: 10px;
+     }
+     .EscapeRoute{
+        padding: 0px;
+     }
+ }
+   
